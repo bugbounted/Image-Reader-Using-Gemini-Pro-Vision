@@ -47,6 +47,7 @@ ask any information in the image and it will retrivel from image
 """
 
 #if button is clicked
+
 if submit:
     image_data = input_image_setup(uploader_file)
     response = get_gemini_response(input_prompt,image_data,input)
