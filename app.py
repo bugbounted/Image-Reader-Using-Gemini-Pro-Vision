@@ -14,7 +14,7 @@ model=genai.GenerativeModel('gemini-pro-vision')
 def get_gemini_response(input,image,prompt):
     response = model.generate_content([input,image[0],prompt])
     return response.text
-
+    
 def input_image_setup(uploader_file):
     if uploader_file is not None:
         bytes_data = uploader_file.getvalue()
